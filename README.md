@@ -66,14 +66,14 @@
 
 ```html
 <!-- 设置文档的字符编码 -->
-<meta charset=\"utf-8\">
+<meta charset="utf-8">
 ```
 
 * [ ] **X-UA-Compatible:** ![Medium][medium_img] 设置 IE 兼容模式
 
 ```html
 <!-- 指示 Internet Explorer 使用最新的渲染引擎 -->
-<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
 > 📖 [Specifying legacy document modes (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
@@ -82,7 +82,7 @@
 
 ```html
 <!-- 窗口用于响应式网页设计 -->
-<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
 * [ ] **Title:** ![High][high_img] 所有网页都使用 title ( SEO : Google 计算 title 的 总字符宽度为 472 ~ 482 px 之间， 平均可容纳 55 个字符 )
@@ -98,16 +98,16 @@
 
 ```html
 <!-- Meta 描述 -->
-<meta name=\"description\" content=\"Description of the page less than 150 characters\">
+<meta name="description" content="Description of the page less than 150 characters">
 ```
 
 * [ ] **Favicons:** ![Medium][medium_img] 设置网页的favicon，确保每个 favicon 被创建且显示正常，如果只有`favicon.ico`，把它放在网站的根目录下，通常你不需要使用任何标记即可显示，但最佳做法是以下方范例的方式来连结。现在推荐使用 **PNG** 格式来取代`.ico`格式。( 尺寸 : 32 x 32像素 )
 
 ```html
 <!-- 标准 favicon -->
-<link rel=\"icon\" type=\"image/x-icon\" href=\"https://example.com/favicon.ico\">
+<link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
 <!-- 推荐 favicon 格式 -->
-<link rel=\"icon\" type=\"image/png\" href=\"https://example.com/favicon.png\">
+<link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
 > * 🛠 [Favicon Generator](https://www.favicon-generator.org/)
@@ -120,7 +120,7 @@
 
 ```html
 <!-- Apple Touch Icon -->
-<link rel=\"apple-touch-icon\" href=\"/custom-icon.png\">
+<link rel="apple-touch-icon" href="/custom-icon.png">
 ```
 
 > 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
@@ -129,20 +129,20 @@
 
 ```html
 <!-- Microsoft Tiles -->
-<meta name=\"msapplication-config\" content=\"browserconfig.xml\" />
+<meta name="msapplication-config" content="browserconfig.xml" />
 ```
 
 browserconfig.xml 文件至少需含以下 xml 标记:
 
 ```xml
-<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
    <msapplication>
      <tile>
-        <square70x70logo src=\"small.png\"/>
-        <square150x150logo src=\"medium.png\"/>
-        <wide310x150logo src=\"wide.png\"/>
-        <square310x310logo src=\"large.png\"/>
+        <square70x70logo src="small.png"/>
+        <square150x150logo src="medium.png"/>
+        <wide310x150logo src="wide.png"/>
+        <square310x310logo src="large.png"/>
      </tile>
    </msapplication>
 </browserconfig>
@@ -150,11 +150,11 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 
 > 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
 
-* [ ] **Canonical:** ![Medium][medium_img] 使用 `rel=\"canonical\"` 来避免重复的内容。( 目的是让搜寻引擎不要索引放置该宣告的页面，而去索引指向的页面 )
+* [ ] **Canonical:** ![Medium][medium_img] 使用 `rel="canonical"` 来避免重复的内容。( 目的是让搜寻引擎不要索引放置该宣告的页面，而去索引指向的页面 )
 
 ```html
 <!-- 有助于防止重复内容的问题 -->
-<link rel=\"canonical\" href=\"http://example.com/2017/09/a-new-article-to-red.html\">
+<link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
 ```
 
 ### HTML tags
@@ -162,13 +162,13 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 * [ ] **Language tag:** ![High][high_img] 设置当前页面使用的语系
 
 ```html
-<html lang=\"en\">
+<html lang="en">
 ```
 
 * [ ] **Direction tag:** ![Medium][medium_img] 设置网页的文章流向 ( 可被设定在其他 HTML 标签上 )
 
 ```html
-<html dir=\"rtl\">
+<html dir="rtl">
 ```
 
 > 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
@@ -176,7 +176,7 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 * [ ] **Alternate language:** ![Low][low_img] 设置当前页面的替代语系
 
 ```html
-<link rel=\"alternate\" href=\"https://es.example.com/\" hreflang=\"es\">
+<link rel="alternate" href="https://es.example.com/" hreflang="es">
 ```
 
 * [ ] **Conditional comments:** ![Low][low_img] for IE 使用的条件式注解
@@ -198,13 +198,13 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 * [ ] **Facebook Open Graph:** ![Low][low_img] 确保所有 Facebook Open Graph（OG）都经过测试，没有错误或漏掉信息。图片至少需要 600 x 315 像素，建议使用 1200 x 630 像素。
 
 ```html
-<meta property=\"og:type\" content=\"website\">
-<meta property=\"og:url\" content=\"https://example.com/page.html\">
-<meta property=\"og:title\" content=\"Content Title\">
-<meta property=\"og:image\" content=\"https://example.com/image.jpg\">
-<meta property=\"og:description\" content=\"Description Here\">
-<meta property=\"og:site_name\" content=\"Site Name\">
-<meta property=\"og:locale\" content=\"en_US\">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/page.html">
+<meta property="og:title" content="Content Title">
+<meta property="og:image" content="https://example.com/image.jpg">
+<meta property="og:description" content="Description Here">
+<meta property="og:site_name" content="Site Name">
+<meta property="og:locale" content="en_US">
 ```
 
 > * 📖 [A Guide to Sharing for Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
@@ -213,13 +213,13 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 * [ ] **Twitter Card:** ![Low][low_img]
 
 ```html
-<meta name=\"twitter:card\" content=\"summary\">
-<meta name=\"twitter:site\" content=\"@site_account\">
-<meta name=\"twitter:creator\" content=\"@individual_account\">
-<meta name=\"twitter:url\" content=\"https://example.com/page.html\">
-<meta name=\"twitter:title\" content=\"Content Title\">
-<meta name=\"twitter:description\" content=\"Content description less than 200 characters\">
-<meta name=\"twitter:image\" content=\"https://example.com/image.jpg\">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@site_account">
+<meta name="twitter:creator" content="@individual_account">
+<meta name="twitter:url" content="https://example.com/page.html">
+<meta name="twitter:title" content="Content Title">
+<meta name="twitter:description" content="Content description less than 200 characters">
+<meta name="twitter:image" content="https://example.com/image.jpg">
 ```
 
 > * 📖 [Getting started with cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
@@ -239,7 +239,7 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 
 * [ ] **Error pages:** ![High][high_img] 存在 404 和 5xx 错误页面。 5xx 错误页面需要集成其 CSS（当前服务器上无法外部调用）
 
-* [ ] **Noopener:** ![Medium][medium_img] 如果你使用`target=\"_blank\"`外部连结，你的连结应包含属性`rel=\"noopener\"`来避免钓鱼攻击。如果你需要支援旧版 firefox ，使用`rel=\"noopener noreferrer\"`
+* [ ] **Noopener:** ![Medium][medium_img] 如果你使用`target="_blank"`外部连结，你的连结应包含属性`rel="noopener"`来避免钓鱼攻击。如果你需要支援旧版 firefox ，使用`rel="noopener noreferrer"`
 
 > 📖 [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
 
@@ -305,9 +305,9 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 * [ ] **JS prefix:** ![Low][low_img] 有前缀 **js-** 的 class、id 不要作为 CSS 样式套用
 
 ```html
-<div id=\"js-slider\" class=\"my-slider\">
+<div id="js-slider" class="my-slider">
 <!-- Or -->
-<div id=\"id-used-by-cms\" class=\"js-slider my-slider\">
+<div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
 * [ ] **CSS embed or line:** ![High][high_img] 避免使用内嵌或行内 CSS : 仅用于有必要的时候 ( 例 : slider 的 background-image， CSS critical 等 )
@@ -480,25 +480,25 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 * [ ] **DNS resolution:** ![Low][low_img] 使用`dns-prefetch`于空闲时间提前载入第三方服务器的 DNS
 
 ```html
-<link rel=\"dns-prefetch\" href=\"https://example.com\">
+<link rel="dns-prefetch" href="https://example.com">
 ```
 
 * [ ] **Preconnection:** ![Low][low_img] 使用`preconnect`提前在空闲时间完成服务器的 DNS 查询，TCP 三向交握以及 TLS 协商。
 
 ```html
-<link rel=\"preconnect\" href=\"https://example.com\">
+<link rel="preconnect" href="https://example.com">
 ```
 
 * [ ] **Prefetching:** ![Low][low_img] 使用`prefetch`提前在空闲时间请求即将需要的资源 ( 例 : lazy lorded 的图像 )
 
 ```html
-<link rel=\"prefetch\" href=\"image.png\">
+<link rel="prefetch" href="image.png">
 ```
 
 * [ ] **Preloading:** ![Low][low_img] 使用`preload`提前加载当前页面需要的资源 ( 例 : 放在`<body>`结尾处的 script )
 
 ```html
-<link rel=\"preload\" href=\"app.js\">
+<link rel="preload" href="app.js">
 ```
 
 > 📖 [Difference between prefetch and preload](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
@@ -538,9 +538,9 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 
 #### Landmarks
 
-- [ ] **Role banner:** ![High][high_img] `<header>`有`role=\"banner\"`属性
-- [ ] **Role navigation:** ![High][high_img] `<nav>`有`role=\"navigation\"`属性
-- [ ] **Role main:** ![High][high_img] `<main>`有`role=\"main\"`属性
+- [ ] **Role banner:** ![High][high_img] `<header>`有`role="banner"`属性
+- [ ] **Role navigation:** ![High][high_img] `<nav>`有`role="navigation"`属性
+- [ ] **Role main:** ![High][high_img] `<main>`有`role="main"`属性
 
 > 📖 [Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
 
