@@ -29,7 +29,7 @@
 
 ## How to use?
 
-**Front-End Checklist** 中的所有项目都是大部分专案所必需的，但某些元素可以省略或者不是那麽重要（在管理 Web APP 的情况下，你可能不需要 RSS 订阅）。我们将元素区分成 3 种等级：
+**Front-End Checklist** 中的所有项目都是大部分专桉所必需的，但某些元素可以省略或者不是那么重要（在管理 Web APP 的情况下，你可能不需要 RSS 订阅）。我们将元素区分成 3 种等级：
 
 * ![Low][low_img] 表示该项目是**推荐**使用的，但在某些特定情况下可以省略。
 
@@ -183,7 +183,7 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 
 > 📖 [About conditional comments (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
 
-* [ ] **RSS feed:** ![Low][low_img] 供专案类型为部落格或含有文章的网页提供 RSS 连结
+* [ ] **RSS feed:** ![Low][low_img] 供专桉类型为部落格或含有文章的网页提供 RSS 连结
 
 * [ ] **CSS Critical:** ![Medium][medium_img] CSS critical 集合并渲染页面中可见部分的 CSS。在主要的 CSS 调用前以单行 ( 最小化 ) 的方式嵌入`<style></style>`中
 
@@ -282,7 +282,7 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 > * 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/#feat=ttf)
 > * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-* [ ] **Webfont size:** ![High][high_img] Webfont 档案大小不要超过 2 MB (含所有版本).
+* [ ] **Webfont size:** ![High][high_img] Webfont 档桉大小不要超过 2 MB (含所有版本).
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -371,7 +371,7 @@ browserconfig.xml 文件至少需含以下 xml 标记:
 > ***Note:*** 许多开发人员认为设定图片宽高会与响应式设计不兼容，但实际上不是这样。
 
 * [ ] **Alternative text:** ![High][high_img] 所有`<img>`应有替代文字 ( alt ) 来描述图片内容
-* [ ] **Lazy loading:** ![Medium][medium_img] 图片使用 lazyloaded ( 也应提供 noscript 当作备案 )
+* [ ] **Lazy loading:** ![Medium][medium_img] 图片使用 lazyloaded ( 也应提供 noscript 当作备桉 )
 
 **[⬆ back to top](#table-of-contents)**
 
